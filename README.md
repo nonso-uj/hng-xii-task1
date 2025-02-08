@@ -14,7 +14,7 @@ This API is developed as part of the HNG12 Stage 1 backend task. It classifies n
 
 ## ⚙️ Technology Stack
 - **Programming Language:** JavaScript/Node.js
-- **Framework (if applicable):** ExpressJS
+- **Framework:** ExpressJS
 - **Deployment Platform:** Render
 
 ## 🗂️ Project Structure
