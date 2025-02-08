@@ -10,26 +10,26 @@ This API is developed as part of the HNG12 Stage 1 backend task. It classifies n
 - Retrieves a **fun fact** from the [Numbers API](http://numbersapi.com/#42).
 
 ## 🚀 Live Demo
-**[API Endpoint](<your-deployed-api-url>)**
+**[API Endpoint](https://hng-xii-task1.onrender.com)**
 
 ## ⚙️ Technology Stack
-- **Programming Language:** <Your Chosen Language (e.g., JavaScript/Node.js, Python, PHP, etc.)>
-- **Framework (if applicable):** <Framework Name>
-- **Deployment Platform:** <Deployment Platform (e.g., Vercel, Render, Railway, etc.)>
+- **Programming Language:** JavaScript/Node.js
+- **Framework (if applicable):** ExpressJS
+- **Deployment Platform:** Render
 
 ## 🗂️ Project Structure
 ```
 ├── index.js        # Main API logic
 ├── .gitignore
 ├── README.md
-└── package.json / requirements.txt (depending on the language)
+└── package.json
 ```
 
 ## ⚡ API Documentation
 
 ### **GET /api/classify-number?number=371**
 - **Description:** Classifies the provided number and returns its mathematical properties.
-- **Endpoint:** `GET <your-deployed-api-url>/api/classify-number?number=371`
+- **Endpoint:** `GET https://hng-xii-task1.onrender.com/api/classify-number?number=371`
 - **Response Format:** `application/json`
 
 ### ✅ Successful Response (200 OK)
@@ -97,7 +97,7 @@ Or with [Postman](https://www.postman.com/).
 
 ## 🌍 Deployment
 The API is deployed and publicly accessible via:
-**[Deployed API](<your-deployed-api-url>)**
+**[Deployed API](https://hng-xii-task1.onrender.com)**
 
 ## ⏱️ Performance
 - **Response Time:** <500ms
