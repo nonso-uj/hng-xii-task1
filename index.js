@@ -39,7 +39,7 @@ app.get(`${apiPrefix}/classify-number`, async (req, res) => {
     armstrong_checker(number) === true && properties.push("armstrong")
     number % 2 === 0 ? properties.push("even") : properties.push("odd")
 
-    const digit_sum = number.toString().split('').reduce((acc, num) => acc + parseInt(num), 0)
+    const digit_sum = number.toString().split('').reduce((acc, num) => acc + (isNaN(num) ? 0 : parseInt(num)), 0)
     const fun_fact = await fetch_fact(number);
 
     return res.json({

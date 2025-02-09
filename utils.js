@@ -23,11 +23,13 @@ export const perfect_checker = (number) => {
 }
 
 export const armstrong_checker = (number) => {
-    const digits = number.toString().split('');
+    let digits = number.toString().split('');
+    number < 0 && digits.shift()
     const order = digits.length;
     const sum = digits.reduce((acc, digit) => acc + Math.pow(parseInt(digit), order), 0);
-
-    return sum === number
+    
+    console.log('digits= ', sum, number)
+    return sum === Math.abs(number)
 }
 
 export const fetch_fact = async (number) => {
