@@ -24,8 +24,8 @@ app.get(`${apiPrefix}/classify-number`, async (req, res) => {
     
     
     if (!number || isNaN(number)){
-        res.status(400).json({
-            "number": "alphabet",
+        return res.status(400).json({
+            "number": number,
             "error": true
         });
     }
@@ -42,7 +42,7 @@ app.get(`${apiPrefix}/classify-number`, async (req, res) => {
     const digit_sum = number.toString().split('').reduce((acc, num) => acc + parseInt(num), 0)
     const fun_fact = await fetch_fact(number);
 
-    res.json({
+    return res.json({
         "number": number,
         "is_prime": is_prime,
         "is_perfect": is_perfect,
